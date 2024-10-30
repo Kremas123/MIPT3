@@ -1,0 +1,58 @@
+<!-- res/layout/activity_main.xml -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Display for showing calculations -->
+    <TextView
+        android:id="@+id/txtDisplay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:text="0"
+        android:textSize="32sp"
+        android:padding="16dp"
+        android:background="#FFFFFF" />
+
+    <!-- GridLayout for calculator buttons -->
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:rowCount="5"
+        android:columnCount="4"
+        android:padding="8dp"
+        android:layout_gravity="center">
+
+        <!-- Row 1 - Operations -->
+        <Button android:id="@+id/btnClear" android:text="@string/clear" />
+        <Button android:id="@+id/btnDelete" android:text="@string/delete" />
+        <Button android:id="@+id/btnSign" android:text="@string/sign" />
+        <Button android:id="@+id/btnDivide" android:text="@string/divide" />
+
+        <!-- Row 2 - Numbers and operations -->
+        <Button android:id="@+id/btn7" android:text="@string/num_7" />
+        <Button android:id="@+id/btn8" android:text="@string/num_8" />
+        <Button android:id="@+id/btn9" android:text="@string/num_9" />
+        <Button android:id="@+id/btnMultiply" android:text="@string/multiply" />
+
+        <!-- Row 3 - Numbers and operations -->
+        <Button android:id="@+id/btn4" android:text="@string/num_4" />
+        <Button android:id="@+id/btn5" android:text="@string/num_5" />
+        <Button android:id="@+id/btn6" android:text="@string/num_6" />
+        <Button android:id="@+id/btnSubtract" android:text="@string/subtract" />
+
+        <!-- Row 4 - Numbers and operations -->
+        <Button android:id="@+id/btn1" android:text="@string/num_1" />
+        <Button android:id="@+id/btn2" android:text="@string/num_2" />
+        <Button android:id="@+id/btn3" android:text="@string/num_3" />
+        <Button android:id="@+id/btnAdd" android:text="@string/add" />
+
+        <!-- Row 5 - Number 0, decimal, sqrt, and equals -->
+        <Button android:id="@+id/btn0" android:text="@string/num_0" />
+        <Button android:id="@+id/btnSqrt" android:text="@string/sqrt" />
+        <Button android:id="@+id/btnEquals" android:text="@string/equals" />
+    </GridLayout>
+</LinearLayout>
