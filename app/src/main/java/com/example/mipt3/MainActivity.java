@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
             txtDisplay.append(button.getText().toString());
         };
 
-        // Set listeners for all numeric buttons 0-9
+
         findViewById(R.id.btn0).setOnClickListener(listener);
         findViewById(R.id.btn1).setOnClickListener(listener);
         findViewById(R.id.btn2).setOnClickListener(listener);
@@ -58,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.btnClear).setOnClickListener(v -> clearDisplay());
         findViewById(R.id.btnSqrt).setOnClickListener(v -> calculateSquareRoot());
         findViewById(R.id.btnSign).setOnClickListener(v -> toggleSign());
-        findViewById(R.id.btnDelete).setOnClickListener(v -> deleteLastCharacter());
+        findViewById(R.id.btnBackspace).setOnClickListener(v -> deleteLastCharacter());
     }
 
     private void setOperator(String op) {
